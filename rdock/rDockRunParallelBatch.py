@@ -1,8 +1,8 @@
 import os, re, time, subprocess
 from joblib import Parallel, delayed
 
-ligands_dir = '/mnt/storage/RANAR_RDOCK/batchligs'
-receptors_paths = "/mnt/storage/RANAR_RDOCK/Jobs/Batch_check/Batch"
+ligands_dir = '/'
+receptors_paths = "/"
 
 def rDockParallel(ligandfile, ligands_dir, receptor_path, output_path, receptors_paths, folder):
    outfilename = f'{output_path}/{os.path.splitext(ligandfile)[0]}'
