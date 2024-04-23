@@ -1,9 +1,9 @@
 import os, re, time, subprocess
 from joblib import Parallel, delayed
 
-ligands_dir = '/home/administrator/Documents/RANAR_test/ligands/batch'
-receptor_path = '/home/administrator/Documents/RANAR_test/3TZR/3TZR.prm'
-output_path = '/home/administrator/Documents/RANAR_test/3TZR/outputParallel'
+ligands_dir = '/'
+receptor_path = '/'
+output_path = '/'
 
 if os.path.exists(output_path) != True:
     os.mkdir(output_path)
